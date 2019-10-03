@@ -1,33 +1,91 @@
-.App {
-  text-align: center;
+body {/*Styling the body*/
+  background-color: orangered;
+  background-size: contain;
+  /*min-height: 100vh;*/
+}
+/*{
+    background-color: #FFFF6;
+    color: #1dc8cd;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;*/
+
+/*app*/
+.app {
+  padding-top: 10rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {/*class header*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo {/*styling the class logo*/
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-is-completed .checkbox {
+  color: black;
+  background: #fff;
+}
+
+.todo-is-completed input {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.checkbox:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.checkbox-checked {
+  color: black;
+  background: #fff;
+}
+
+ul {/*Styling the unodered list*/
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  width: 500px;
+}
+
+input {/*Styling the input*/
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.4rem;
+  outline: none;
+  width: 100%;
 }
