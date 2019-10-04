@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a to-do-list app, just to keep track of work to do.
+You can edit the template
+You can delete the current template and add yours
+Can easily mark out your done task
+
+
+
+***************************************************************************************************************
+
 ## Available Scripts
 
 In the project directory, you can run:
